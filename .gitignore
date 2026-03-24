@@ -1,0 +1,14 @@
+# --- C++ 编译生成物 ---
+*.exe
+*.o
+*.obj
+*.out
+
+# --- Dev-C++ 特有文件 ---
+Makefile.win
+*.layout
+
+# --- VS Code 特有文件 ---
+.vscode/
+.history/
+*.code-workspace
