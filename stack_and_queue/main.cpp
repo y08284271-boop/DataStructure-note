@@ -31,26 +31,26 @@ bool empty(){
 }
 
 // 队列的实现
-int q[N],hh=0,tt=-1;
+int q[N], h=0, t=0;
 
 // 入队
 void enqueue(int x){
-	q[++tt]=x;
+	q[++t] = x;
 }
 
 // 出队
 void dequeue(){
-	hh++;
+	h++;
 }
 
 // 查询队头
 int front(){
-	return q[hh];
+	return q[h+1];
 }
 
 // 判空
 bool qempty(){
-	return hh>tt;
+	return h >= t;
 }
 
 int main() {

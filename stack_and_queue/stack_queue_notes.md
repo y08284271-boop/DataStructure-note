@@ -83,26 +83,26 @@ bool empty() {
 
 ```cpp
 const int N = 1e5 + 10;
-int q[N], hh = 0, tt = -1; // hh 为队头，tt 为队尾
+int q[N], h = 0, t = 0; // h 和 t 初始为 0，h 为队头前一个位置，t 为队尾
 
 // 入队
 void enqueue(int x) {
-    q[++tt] = x;
+    q[++t] = x;
 }
 
 // 出队
 void dequeue() {
-    hh++;
+    h++;
 }
 
 // 查询队头
 int front() {
-    return q[hh];
+    return q[h + 1];
 }
 
 // 判空
 bool qempty() {
-    return hh > tt;
+    return h >= t;
 }
 ```
 
